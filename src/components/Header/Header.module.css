@@ -1,0 +1,66 @@
+.logoTextContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.headerTitle,
+.headerMotto {
+    vertical-align: inherit;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.headerTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e2929; 
+}
+
+.headerMotto {
+    font-size: 12px;
+    color: #817a7a;
+}
+
+.headerMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1e1e1e; 
+    border-bottom: 1px solid #333;
+}
+
+.headerLogoText {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.toggleButtonsDivs {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+}
+
+
+@media (max-width: 600px) {
+    .toggleButtonsDivs {
+        display: flex;
+    }
+}

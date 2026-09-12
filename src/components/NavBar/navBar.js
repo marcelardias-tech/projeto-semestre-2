@@ -1,32 +1,31 @@
+'use client';
 import Link from 'next/link';
-import styles from './navBar.modules.css';
+import { usePathname } from 'next/navigation';
+import styles from './navBar.module.css';
 
-export default function navBar() {
+export default function NavBar() {
+
+  const pathname = usePathname();
+
   return (
-    <aside className={styles.navBar}>
-      <div className={styles.navBarContainer}>
-        
-        <nav className={styles.menuBloco}>
-          <h3 className={styles.tituloBloco}>Conteúdo principal</h3>
-          <ul className={styles.menuList}>
-            <li>
-              <Link href="/index" className={styles.active}>
-                <img src="/icons/home.png" alt="icons" /> Introdução
-              </Link>
-            </li>
-            <li>
-              <Link href="/page2">
-                <img src="" alt="icons" />tutoriais e primeiros passos
-              </Link>
-            </li>
-            <li>
-              <Link href="/page3">
-                <img src="/" alt="icons" /> Recursos
-              </Link>
-            </li>
-          </ul>
+
+    <aside>
+      <div className={styles.navCate}>
+      
+        <nav className="nav-categories" aria-label="Categoria de navegação:  <span className={styles.navTitle}>Páginas</span>">
+
+          <span className={styles.navTitle}>Páginas</span>
+
+          <Link href="/"   className={pathname === '/' ? styles.navActive : styles.navInactive}>Introdução</Link>
+         
+          <Link href="/page2" className={pathname === '/page2' ? styles.navActive : styles.navInactive}>Viés Social</Link>
+
+          <Link href="/page3" className={pathname === '/page3' ? styles.navActive : styles.navInactive}>Como Iniciar</Link> 
+
         </nav>
       </div>
     </aside>
-  );
+        
+  );      
 }
+    
