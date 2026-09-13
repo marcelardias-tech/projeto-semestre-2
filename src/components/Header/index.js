@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function Header({ onToggleMenu, isMenuOpen }) {
     return (
         <header className={styles.headerMain}>
-            <div class={styles.headerLogoText}>
+            <div className={styles.headerLogoText}>
 
                 <Image src="/images/frutiger_aero-removebg-preview.png" className={styles.logo} alt="Logotipo típica frutiger aero" width={40} height={40} priority></Image>
 
@@ -17,10 +17,10 @@ export default function Header({ onToggleMenu, isMenuOpen }) {
 
                     <span className={styles.headerMotto}></span>
 
-                    <div className={styles.toggleButtonsDivs} OnClick={onToggleMenu}>
-                        <span className={styles.hideNavbarButtonText}>{isMenuOpen ? 'Hide <': 'Menu >'}</span>
+                    <div className={styles.toggleButtonsDivs} onClick={onToggleMenu}>
+                        <span className={styles.hideNavbarButtonText}>{isMenuOpen ? 'Fechar >': 'Menu >'}</span>
 
-                        <Image src='' alt='Botão de aternância de menu' width={25} height={25}></Image>
+                        <Image src='/images/frutiger_aero_sticker-removebg-preview.png' alt='Botão de aternância de menu' width={25} height={25}></Image>
                     </div>
 
                 </div>

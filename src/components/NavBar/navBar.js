@@ -11,21 +11,20 @@ export default function NavBar() {
 
     <aside>
       <div className={styles.navCate}>
-      
-        <nav className="nav-categories" aria-label="Categoria de navegação:  <span className={styles.navTitle}>Páginas</span>">
 
-          <span className={styles.navTitle}>Páginas</span>
+        <nav className="nav-categories" aria-label="Navegação de páginas">   
 
-          <Link href="/"   className={pathname === '/' ? styles.navActive : styles.navInactive}>Introdução</Link>
-         
-          <Link href="/page2" className={pathname === '/page2' ? styles.navActive : styles.navInactive}>Viés Social</Link>
+        <span className={styles.navTitle}>Páginas</span>
 
-          <Link href="/page3" className={pathname === '/page3' ? styles.navActive : styles.navInactive}>Como Iniciar</Link> 
+        <Link href="/" className={pathname === '/' ? styles.navActive : styles.navInactive}>Introdução</Link>
+
+        <Link href="/page2" className={pathname === '/page2' ? styles.navActive : styles.navInactive}>Viés Social</Link>
+
+        <Link href="/page3" className={pathname === '/page3' ? styles.navActive : styles.navInactive}>Como Iniciar</Link>
 
         </nav>
       </div>
-    </aside>
+    </aside >
         
-  );      
+  );
 }
-    
