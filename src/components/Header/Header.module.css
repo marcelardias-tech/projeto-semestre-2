@@ -58,6 +58,52 @@
     user-select: none;
 }
 
+.headerMain {
+  background: linear-gradient(to bottom, #2d332d 0%, #151815 50%, #080a08 51%, #121612 100%);
+  padding: 12px 20px;
+  border-bottom: 2px solid var(--aero-border-green);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.headerLogoText {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  filter: drop-shadow(0 0 6px rgba(40, 202, 40, 0.6));
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+
+.toggleButtonsDivs {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.4));
+  border: 1px solid var(--aero-border-green);
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.toggleButtonsDivs:hover {
+  background: linear-gradient(to bottom, rgba(40, 202, 40, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+.hideNavbarButtonText {
+  font-size: 0.85rem;
+  color: #ffffff;
+  font-weight: bold;
+}
 
 @media (max-width: 600px) {
     .toggleButtonsDivs {

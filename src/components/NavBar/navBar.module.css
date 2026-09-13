@@ -1,16 +1,15 @@
 .navTitle {
   font-weight: bold;
-  /* Seus estilos de título */
+
 }
 
-/* Classe para quando o link NÃO está ativo */
 .navInactive {
   color: #666;
   text-decoration: none;
   padding: 8px 12px;
 }
 
-/* Classe para quando o link ESTÁ ativo */
+
 .navActive {
   color: #0070f3;
   font-weight: bold;
@@ -18,12 +17,12 @@
   padding: 8px 12px;
 }
  
- /* .navBar {
+ .navBar {
    width: 260px;
    min-height: 100vh;
  }
 
- A div interna que envelopa os menus .navBarContainer {
+ .navBarContainer {
    background-color: rgba(28, 28, 28, 0.9);
    border: 1px solid rgba(255, 255, 255, 0.15);
    border-radius: 8px;
@@ -31,7 +30,7 @@
    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
  }
 
- Blocos de Navegação (<nav>) .menuBloco {
+ .menuBloco {
    margin-bottom: 24px;
  }
 
@@ -86,9 +85,64 @@
    border: 1px solid #a3ff1a;
    box-shadow: 0 0 10px rgba(138, 230, 0, 0.5);
    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-   O pulo do gato do efeito glossy: quebra brusca de cor aos 50% background: linear-gradient(to bottom,
+   background: linear-gradient(to bottom,
        #8ae600 0%,
        #5c9900 50%,
        #3d6600 51%,
        #5c9900 100__);
- } */
+ } 
+
+ .navCate {
+  width: 220px;
+  background: linear-gradient(to right, rgba(15, 20, 15, 0.9), rgba(5, 8, 5, 0.95));
+  border-right: 1px solid rgba(80, 200, 80, 0.3);
+  padding: 10px;
+  min-height: 100%;
+}
+
+.navTitle {
+  display: block;
+  background: linear-gradient(to bottom, #2e3b2e, #141d14);
+  color: #a3e6a3;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(60, 150, 60, 0.4);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.navActive,
+.navInactive {
+  display: block;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+/* Link Inativo */
+.navInactive {
+  color: #cccccc;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navInactive:hover {
+  color: #ffffff;
+  background: linear-gradient(to bottom, rgba(40, 202, 40, 0.2), rgba(0, 0, 0, 0.4));
+  border-color: var(--aero-border-green);
+}
+
+/* Link Ativo (Efeito Botão Brilhante Verde) */
+.navActive {
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #42c742 0%, #1e831e 50%, #0d5c0d 51%, #197a19 100%);
+  border: 1px solid #66ff66;
+  box-shadow: 0 0 8px rgba(40, 202, 40, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
