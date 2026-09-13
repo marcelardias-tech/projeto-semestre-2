@@ -64,7 +64,7 @@ body {
   margin: 0;
   padding: 20px 0;
   min-height: 100vh;
-  /* Fundo de grama cobrindo toda a tela */
+
   background: url('/images/themes/default/grass_bg.jpg') center top fixed no-repeat;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
@@ -73,7 +73,7 @@ body {
   justify-content: center;
 }
 
-/* Janela Principal (Container Centralizado) */
+
 .bodyLayout {
   width: 90%;
   max-width: 1020px;
@@ -92,14 +92,14 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Área de Conteúdo Central */
+
 .content {
   flex: 1;
   padding: 15px;
   background: rgba(10, 15, 10, 0.4);
 }
 
-/* Molduras Efeito Vidro (Glass Borders) */
+
 .glass-borders {
   border: 1px solid rgba(60, 160, 60, 0.5);
   border-radius: 6px;
