@@ -7,16 +7,17 @@ export const metadata = {
   charset: 'UTF-8',
   author: 'Marcela Rocha Dias',
   keywords: 'HTML, CSS, JavaScript, React, Next.js',
-
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className="bodyLayout">
-        <ClientLayout>
-          {children}
-        </ClientLayout>
+      <body>
+        <div className="bodyLayout">
+          <ClientLayout>
+            {children}
+          </ClientLayout>
+        </div>
       </body>
     </html>
   );

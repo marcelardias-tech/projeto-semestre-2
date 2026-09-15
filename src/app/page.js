@@ -6,13 +6,17 @@ export default function Home() {
   return (
     <main id="mainContent" aria-label="Conteúdo principal">
       <section>
-        <h1 className={styles.title}>Página de Introdução</h1>
+        <div className={styles.barraTitulo}>
 
+            <h1 className={styles.title}>Página de Introdução</h1>
+
+        </div>
+       
         
         <div className={styles.glassBox}>
           <div className={styles.bannerWrapper}>
             <Image
-              src="/images/themes/default/introduction_banner.jpg"
+              src="/images/Frutiger Aero Banner personalizado.jpeg"
               alt="Banner explicativo da página de introdução"
               id="introBanner"
               width={800}
@@ -33,7 +37,8 @@ export default function Home() {
         <div className={styles.glassBox}>
           <article className={styles.card} aria-labelledby="gallery-title">
             <header className={styles.cardHeader}>
-              <h2 id="gallery-title">Exemplos de Frutiger Aero</h2>
+              <div className={styles.barraTitulo}><h2 id="gallery-title">Exemplos de Frutiger Aero</h2></div>
+              
               <p className={styles.description}>
                 Aqui estão alguns exemplos do estilo. Você pode clicar nas imagens para vê-las em tamanho real. Confira também o{" "}
                 <Link
