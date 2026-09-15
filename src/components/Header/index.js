@@ -16,12 +16,15 @@ export default function Header({ onToggleMenu, isMenuOpen }) {
         />
 
         <div className={styles.content}>
-          <span className={styles.title}>O Arquivo Frutiger Aero</span>
-          <span></span>
-
-          <button 
-            type="button" 
-            className={styles.toggleBtn} 
+          <div>
+            <span className={styles.title}>O Arquivo Cyberdeck</span>
+            <span className={styles.headerMotto}>
+              Aqui você amante da cultura cyber pode conhecer um pouco mais sobre essa estética que tem emergido nos 2000!
+            </span>
+          </div>
+          <button
+            type="button"
+            className={styles.toggleBtn}
             onClick={onToggleMenu}
             aria-label="Alternar exibição do menu"
           >
