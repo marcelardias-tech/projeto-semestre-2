@@ -6,7 +6,6 @@ import styles from './navBar.module.css';
 export default function NavBar() {
   const pathname = usePathname();
 
-  // Junta a classe base com o estado ativo/inativo
   const getLinkClass = (path) => 
     `${styles.navLink} ${pathname === path ? styles.navActive : styles.navInactive}`;
 

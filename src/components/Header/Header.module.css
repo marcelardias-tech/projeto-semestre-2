@@ -1,71 +1,22 @@
-.logoTextContainer {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.headerTitle,
-.headerMotto {
-    vertical-align: inherit;
-    display: inline-block;
-    font-family: sans-serif;
-}
-
-.headerTitle {
-    font-size: 18px;
-    font-weight: bold;
-    color: #2e2929; 
-}
-
-.headerMotto {
-    font-size: 12px;
-    color: #817a7a;
-}
-
-.headerMain {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #1e1e1e; 
-    border-bottom: 1px solid #333;
-}
-
-.headerLogoText {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.headerText {
-    display: flex;
-    flex-direction: column;
-}
-
-.headerTitle {
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-}
-
-
-.toggleButtonsDivs {
-    display: none;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    color: #fff;
-    user-select: none;
-}
-
-.headerMain {
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 35px 20px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
   background: linear-gradient(to bottom, #2d332d 0%, #151815 50%, #080a08 51%, #121612 100%);
-  padding: 12px 20px;
-  border-bottom: 2px solid var(--aero-border-green);
+  border-bottom: 2px solid var(--aero-border-green, #3ab03a) !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.headerLogoText {
+.logoGroup {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -75,38 +26,51 @@
   filter: drop-shadow(0 0 6px rgba(40, 202, 40, 0.6));
 }
 
-.headerTitle {
-  font-size: 1.5rem;
+.content {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  gap: 12px; 
+}
+
+.title {
+  display: block;
+  font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-  display: block;
+  font-family: sans-serif;
 }
 
-.toggleButtonsDivs {
-  display: inline-flex;
+.toggleBtn {
+  display: none;
   align-items: center;
+  flex-direction: row;
+  white-space: nowrap;
   gap: 6px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.4));
-  border: 1px solid var(--aero-border-green);
+  background: transparent;
+  border: none;
   border-radius: 4px;
-  padding: 3px 8px;
+  padding: 0 ;
   cursor: pointer;
-  margin-top: 5px;
+  margin: 0;
+  width: auto;
 }
 
-.toggleButtonsDivs:hover {
-  background: linear-gradient(to bottom, rgba(40, 202, 40, 0.4), rgba(0, 0, 0, 0.6));
+.toggleBtn:hover {
+  background: transparent;
+  opacity: 0.8;
 }
 
-.hideNavbarButtonText {
+.toggleText {
   font-size: 0.85rem;
   color: #ffffff;
   font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 600px) {
-    .toggleButtonsDivs {
-        display: flex;
-    }
+  .toggleBtn {
+    display: inline-flex;
+  }
 }

@@ -1,31 +1,42 @@
-'use client'
-import styles from './Header.module.css';
+'use client';
 import Image from 'next/image';
-import { useState } from 'react';
+import styles from './Header.module.css';
 
 export default function Header({ onToggleMenu, isMenuOpen }) {
-    return (
-        <header className={styles.headerMain}>
-            <div className={styles.headerLogoText}>
+  return (
+    <header className={styles.container}>
+      <div className={styles.logoGroup}>
+        <Image
+          src="/images/frutiger_aero-removebg-preview.png"
+          className={styles.logo}
+          alt="Logotipo Frutiger Aero"
+          width={65}
+          height={65}
+          priority
+        />
 
-                <Image src="/images/frutiger_aero-removebg-preview.png" className={styles.logo} alt="Logotipo típica frutiger aero" width={40} height={40} priority></Image>
+        <div className={styles.content}>
+          <span className={styles.title}>O Arquivo Frutiger Aero</span>
+          <span></span>
 
-                <div className={styles.headerText}>
-                    <span className={styles.headerTitle}>
-                        0 Arquivo Frutiger Aero
-                    </span>
-
-                    <span className={styles.headerMotto}></span>
-
-                    <div className={styles.toggleButtonsDivs} onClick={onToggleMenu}>
-                        <span className={styles.hideNavbarButtonText}>{isMenuOpen ? 'Fechar >': 'Menu >'}</span>
-
-                        <Image src='/images/frutiger_aero_sticker-removebg-preview.png' alt='Botão de aternância de menu' width={25} height={25}></Image>
-                    </div>
-
-                </div>
-            </div>
-        </header>
-
-    )
+          <button 
+            type="button" 
+            className={styles.toggleBtn} 
+            onClick={onToggleMenu}
+            aria-label="Alternar exibição do menu"
+          >
+            <span className={styles.toggleText}>
+              {isMenuOpen ? 'Fechar >' : 'Menu >'}
+            </span>
+            <Image
+              src="/images/frutiger_aero_sticker-removebg-preview.png"
+              alt=""
+              width={50}
+              height={45}
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+  );
 }
