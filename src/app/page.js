@@ -44,6 +44,21 @@ export default function Home() {
             </header>
             <div className={styles.galleryGrid} />
           </article>
+
+          <div className={styles.glassBox}>
+          <div className={styles.bannerWrapper}>
+            <Image
+              src="/images/People are going viral for building homemade___.jpeg"
+              alt="Banner explicativo da página de introdução"
+              id="introBanner2"
+              width={800}
+              height={300}
+              priority
+            />
+          </div>
+        </div>
+
+
         </div>
       </section>
     </main>
